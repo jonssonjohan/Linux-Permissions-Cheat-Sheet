@@ -4,7 +4,7 @@ A quick reference for understanding and using `chmod` and `ls -l`
 
 ---
 
-## 🔑 Permission Basics
+## Permission Basics
 
 Each file has 3 permission groups:
 
@@ -18,7 +18,7 @@ Each group can have:
 - **w** = write (2)
 - **x** = execute (1)
 
-👉 Add values to get numbers:
+Add values to get numbers:
 
 ```
 rwx = 7
@@ -33,7 +33,7 @@ r-- = 4
 
 ---
 
-## 🔢 chmod Numbers
+## chmod Numbers
 
 Format:
 
@@ -56,7 +56,7 @@ chmod 777 open.txt    # rwxrwxrwx (unsafe)
 
 ---
 
-## 🔍 `ls -l` Output Explained
+## `ls -l` Output Explained
 
 Example:
 
@@ -73,7 +73,7 @@ Breakdown:
 
 ---
 
-### 🧾 File Type (1st character)
+### File Type (1st character)
 
 ```
 -  = regular file  
@@ -85,7 +85,7 @@ c  = character device
 
 ---
 
-### 🔐 Permissions (next 9 characters)
+### Permissions (next 9 characters)
 
 ```
 rwx r-x r--
@@ -96,7 +96,7 @@ rwx r-x r--
 
 ---
 
-### 🔢 Convert to Numbers
+### Convert to Numbers
 
 ```
 rwx = 7
@@ -112,7 +112,7 @@ Example:
 
 ---
 
-## ✅ Common Permission Sets
+## Common Permission Sets
 
 ```bash
 755 → rwxr-xr-x  (executables)
@@ -123,7 +123,7 @@ Example:
 
 ---
 
-## ⚡ Quick Patterns
+## Quick Patterns
 
 ```
 rw-r--r-- → 644
@@ -134,9 +134,9 @@ rwx------ → 700
 
 ---
 
-## 🧠 Useful Tips
+## Useful Tips
 
-### 📂 Directories
+### Directories
 
 - `r` → list files (`ls`)
 - `w` → create/delete files
@@ -144,20 +144,20 @@ rwx------ → 700
 
 ---
 
-### ⚙️ Execute (`x`)
+### Execute (`x`)
 
 - Required to run scripts or binaries
 
 ---
 
-### 🔗 Symbolic Links
+### Symbolic Links
 
 - Show as: `lrwxrwxrwx`
 - Permissions are usually ignored
 
 ---
 
-## 🧪 Practice Example
+## Practice Example
 
 ```
 drwxr-x---
@@ -169,7 +169,7 @@ drwxr-x---
 
 ---
 
-## 🚀 Memory Trick
+## Memory Trick
 
 ```
 r = 4, w = 2, x = 1 → just add them
@@ -184,7 +184,7 @@ r = 4, w = 2, x = 1 → just add them
 ```
 
 ----
-### Think in questions (fast decision trick)
+## Think in questions
 Ask yourself:
 
 Who owns this?
